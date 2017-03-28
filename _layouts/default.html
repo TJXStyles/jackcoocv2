@@ -308,128 +308,25 @@
 
         <div class="row">
           <div id="grid">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "web"]'>
+
+          {% for post in site.posts %}
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='[ {% for tag in post.tags %} "{{ tag }}" {% if forloop.last == false %},{% endif %}{% endfor %}]'>
               <div class="portfolio-bg">
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="../images/works/mmm.png"><i class="fa fa-search-plus"></i></a>
-                    <a href="http://www.meetmiaomiao.com/" target="_blank"><i class="fa fa-link"></i></a>                          
+                    <a class="image-link" href="../images/works/{{ post.image }}}"><i class="fa fa-search-plus"></i></a>
+                    <a href="{{ post.url }}" target="_blank"><i class="fa fa-link"></i></a>                          
                   </div><!-- /.links -->
                   <img src="../images/works/mmm.png" alt="image"> 
                   <div class="portfolio-info">
-                    <h3>Meet Miaomiao</h3>
+                    <h3>{{ post.title }}</h3>
                   </div><!-- /.portfolio-info -->
                 </div><!-- /.portfolio -->
               </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
+            </div>
+          {% endfor %}
 
-
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "web"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/foodie.png"><i class="fa fa-search-plus"></i></a>
-                    <a href="http://www.confuciuswasafoodie.com/"><i class="fa fa-link"></i></a>                          
-                  </div><!-- /.links -->
-                  <img src="assets/images/works/foodie.png" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Confucius Was a Foodie</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "web"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/aoc.png"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div><!-- /.links -->
-                  <img src="assets/images/works/aoc.png" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Art of Courage</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "web"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/shuihu.png"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div><!-- /.links -->
-                  <img src="assets/images/works/shuihu.png" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Outlaws of the Marsh</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/best-actress-new.png"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div><!-- /.links -->
-                  <img src="assets/images/works/best-actress-new.png" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Oscar Card Redesign</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/np-redesign.png"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div><!-- /.links -->
-                  <img src="assets/images/works/np-redesign.png" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>National Post Mobile app redesign</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/portfolio-7.jpg"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div><!-- /.links -->
-                  <img src="assets/images/works/portfolio-7.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Portfolio Title</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "design"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="assets/images/works/portfolio-8.jpg"><i class="fa fa-search-plus"></i></a>
-                    <a href="#"><i class="fa fa-link"></i></a>                          
-                  </div><!-- /.links -->
-                  <img src="assets/images/works/portfolio-8.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Portfolio Title</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
           </div><!-- /#grid -->
         </div><!-- /.row -->
       </div><!-- /.container -->
