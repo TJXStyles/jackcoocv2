@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en" itemscope itemtype="http://schema.org/Article"><!--<![endif]-->
+    {% include head.html %}    
+    <body>
+      {% include nav-header-post.html %}
+
+      <div class="container">
+        <a href="{{site.baseurl}}"><i class="fa fa-chevron-left"></i> Back to site</a>
+        
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </div>
+  	 <!-- Scroll-up -->
+  		<div class="scroll-up">
+    		<a href="#home"><i class="fa fa-angle-up"></i></a>
+  		</div>
+
+  {% include js.html%}
+</body>
+</html>

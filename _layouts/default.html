@@ -38,31 +38,7 @@
 
 
   <!-- Navigation -->
-  <header class="header">
-    <nav class="navbar navbar-custom" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt=""></a> -->
-        </div>
-
-        <div class="collapse navbar-collapse" id="custom-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#works">Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div><!-- .container -->
-    </nav>
-  </header><!-- End Navigation -->
+  {% include nav-header.html %}
 
 
     <!-- About Section -->
@@ -315,10 +291,10 @@
                 <div class="portfolio">
                   <div class="tt-overlay"></div>
                   <div class="links">
-                    <a class="image-link" href="../images/works/{{ post.image }}}"><i class="fa fa-search-plus"></i></a>
+                    <a class="image-link" href="../images/works/{{ post.image }}"><i class="fa fa-search-plus"></i></a>
                     <a href="{{ post.url }}" target="_blank"><i class="fa fa-link"></i></a>                          
                   </div><!-- /.links -->
-                  <img src="../images/works/mmm.png" alt="image"> 
+                  <img src="../images/works/{{ post.image }}" alt="{{ post.alt }}"> 
                   <div class="portfolio-info">
                     <h3>{{ post.title }}</h3>
                   </div><!-- /.portfolio-info -->
