@@ -1,0 +1,41 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <!-- Facebook Open Graph - Start -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else if %}{{site.title}}{% endif %}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type" content="website">
+  <!-- Facebook open graph - End -->
+
+  <!-- Add the following three tags inside head. -->
+  <meta itemprop="name" content="A Dancer&#39;s World">
+  <meta itemprop="description" content="Jack Cooc">
+  <!-- schema.org -->
+
+
+    <!-- Web Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap core CSS -->
+  <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome CSS -->
+  <link href="/css/font-awesome.min.css" rel="stylesheet" media="screen">
+  <!-- Animate css -->
+  <link href="/css/animate.css" rel="stylesheet">
+  <!-- Magnific css -->
+  <link href="/css/magnific-popup.css" rel="stylesheet">
+  <!-- Custom styles CSS -->
+  <link href="{{ "/css/style.css" | prepend: site.baseurl }}" rel="stylesheet" >
+
+  <!-- Responsive CSS -->
+  <link href="/css/responsive.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="">
+
+</head>
