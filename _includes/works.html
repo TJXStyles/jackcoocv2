@@ -1,0 +1,36 @@
+<section id="works" class="works-section section-padding">
+    <div class="container">
+        <h2 class="section-title wow fadeInUp">My Work</h2>
+        <ul class="list-inline" id="filter">
+            <li><a class="active" data-group="all">All</a></li>
+            <li><a data-group="web">Web</a></li>
+            <li><a data-group="design">Design</a></li>
+            <li><a data-group="interface">Interface</a></li>
+        </ul>
+        <div class="row">
+            <div id="grid">
+                {% for post in site.posts %}
+                <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='[ {% for tag in post.tags %} "{{ tag }}" {% if forloop.last == false %},{% endif %}{% endfor %}]'>
+                    <div class="portfolio-bg">
+                        <a href="{{ post.url }}">
+                            <div class="portfolio">
+                                <div class="tt-overlay"></div>
+                                <img src="../images/works/{{ post.image-thumb }}" alt="{{ post.alt }}">
+                                <div class="portfolio-info">
+                                    <h3>{{ post.title }}</h3>
+                                </div>
+                                <!-- /.portfolio-info -->
+                            </div>
+                            <!-- /.portfolio -->
+                        </a>
+                    </div>
+                    <!-- /.portfolio-bg -->
+                </div>
+                {% endfor %}
+            </div>
+            <!-- /#grid -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>

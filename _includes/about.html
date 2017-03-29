@@ -1,0 +1,40 @@
+<section id="about" class="about-section section-padding">
+    <div class="container">
+        <h2 class="section-title wow fadeInUp">About Me</h2>
+        <div class="row">
+            <div class="col-md-4 col-md-push-8">
+                <div class="biography">
+                    <div class="myphoto">
+                        <img src="../images/profile.png" alt="">
+                    </div>
+                    <ul>
+                        <li><strong>Name:</strong> {{ site.fullname }}</li>
+                        <li><strong>Location:</strong> Toronto, ON</li>
+                        <li><strong>Email:</strong> {{ site.email }}</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- col-md-4 -->
+            <div class="col-md-8 col-md-pull-4">
+                <div class="short-info wow fadeInUp">
+                    <h3>About Me</h3>
+                    <p>{{ site. about }}
+                    </p>
+                </div>
+                <div class="short-info wow fadeInUp">
+                    <h3>What do I know?</h3>
+                    <p>{{ site.iknow }}</p>
+                    <ul class="list-check">
+                        {% for skill in site.data.skills %}
+                        <li>{{ skill.skill }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="download-button">
+                    <a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Send me message</a>
+                    <a class="btn btn-primary btn-lg" href="/jackcooc-resume.pdf" target="_blank"><i class="fa fa-download"></i>download my cv</a>
+                </div>
+            </div>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
