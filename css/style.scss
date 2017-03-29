@@ -551,6 +551,10 @@ SOCIAL ICON
   }
 }
 
+.wordmark-logo {
+  width: 100px;
+}
+
 /*download-button*/
 
 .download-button a {
@@ -584,6 +588,14 @@ SOCIAL ICON
   img {
     position: relative;
     z-index: -1;
+    // mirror profile photo
+    // -moz-transform: scaleX(-1);
+    // -o-transform: scaleX(-1);
+    // -webkit-transform: scaleX(-1);
+    // transform: scaleX(-1);
+    // filter: FlipH;
+    // -ms-filter: "FlipH";
+
   }
 }
 

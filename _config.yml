@@ -23,6 +23,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://jackcooc.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter: jackcooc
 
+logo: jackcooc-wordmark-sm.png
+
 # Website Text
 #About me section
 about: I am a Toronto based web developer with experience in creating web solutions, most recently focusing on user experience design. I am passionate about building web experiences using robust, extensible frameworks and tools, always striving to continuously learn new skills and the latest technologies in each of my projects.

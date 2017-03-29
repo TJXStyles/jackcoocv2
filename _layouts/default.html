@@ -68,20 +68,21 @@
                     </div>
                     <div class="resume">
                         <ul class="timeline">
-                            <li>
+                            {% for edu in site.data.experience.education %}
+                            <li class="{% cycle 'timeline', 'timeline-inverted' %} ">
                                 <div class="posted-date">
-                                    <span class="month">2013</span>
+                                    <span class="month">{{ edu.year }}</span>
                                 </div>
                                 <!-- /posted-date -->
                                 <div class="timeline-panel wow fadeInUp">
                                     <div class="timeline-content">
                                         <div class="timeline-heading">
-                                            <h3>Web Development</h3>
-                                            <span>Full time Web Development course - Bitmaker Labs</span>
+                                            <h3>{{ edu.role }}</h3>
+                                            <span>{{ edu. place }}</span>
                                         </div>
                                         <!-- /timeline-heading -->
                                         <div class="timeline-body">
-                                            <p>Completed the 9 week full time Web Development course.</p>
+                                            <p>{{ edu.description }}</p>
                                         </div>
                                         <!-- /timeline-body -->
                                     </div>
@@ -89,27 +90,7 @@
                                 </div>
                                 <!-- /timeline-panel -->
                             </li>
-                            <li class="timeline-inverted">
-                                <div class="posted-date">
-                                    <span class="month">2016</span>
-                                </div>
-                                <!-- /posted-date -->
-                                <div class="timeline-panel wow fadeInUp">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>User Experience</h3>
-                                            <span>User Experience immersive course - Brainstation</span>
-                                        </div>
-                                        <!-- /timeline-heading -->
-                                        <div class="timeline-body">
-                                            <p>Completed the 10 week User Experience immersive course for User Experience Design.</p>
-                                        </div>
-                                        <!-- /timeline-body -->
-                                    </div>
-                                    <!-- /timeline-content -->
-                                </div>
-                                <!-- /timeline-panel -->
-                            </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -122,22 +103,23 @@
                     </div>
                     <div class="resume">
                         <ul class="timeline">
-                        
+
                         <!-- loop starts here -->
-                            <li class="timeline">
+                        {% for exp in site.data.experience.work %}
+                            <li class="{% cycle 'timeline', 'timeline-inverted' %} ">
                                 <div class="posted-date">
-                                    <span class="month">2013 - Present</span>
+                                    <span class="month">{{ exp.year }}</span>
                                 </div>
                                 <!-- /posted-date -->
                                 <div class="timeline-panel wow fadeInUp">
                                     <div class="timeline-content">
                                         <div class="timeline-heading">
-                                            <h3>Teaching Assistant</h3>
-                                            <span>The YMC - Web Masters Web Development Workshop</span>
+                                            <h3>{{ exp.role }}</h3>
+                                            <span>{{ exp.place }}</span>
                                         </div>
                                         <!-- /timeline-heading -->
                                         <div class="timeline-body">
-                                            <p>Assisted classes of 20 students in a series of 9-week courses that introduced web development to beginners</p>
+                                            <p>{{ exp.description }}</p>
                                         </div>
                                         <!-- /timeline-body -->
                                     </div>
@@ -145,90 +127,9 @@
                                 </div>
                                 <!-- /timeline-panel -->
                             </li>
-                            <li class="timeline-inverted">
-                                <div class="posted-date">
-                                    <span class="month">2014</span>
-                                </div>
-                                <!-- /posted-date -->
-                                <div class="timeline-panel wow fadeInUp">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Front-End Web Developer</h3>
-                                            <span>Hashtag Paid</span>
-                                        </div>
-                                        <!-- /timeline-heading -->
-                                        <div class="timeline-body">
-                                            <p>Front-End development of the web application utilizing HTML5, Less, and JavaScript leveraging the Bootstrap framework and a Ruby on Rails/SQL back- end</p>
-                                        </div>
-                                        <!-- /timeline-body -->
-                                    </div>
-                                    <!-- /timeline-content -->
-                                </div>
-                                <!-- /timeline-panel -->
-                            </li>
-                            <li class="timeline">
-                                <div class="posted-date">
-                                    <span class="month">2015</span>
-                                </div>
-                                <!-- /posted-date -->
-                                <div class="timeline-panel wow fadeInUp">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Mentor/Instructor</h3>
-                                            <span>Ladies Learning Code</span>
-                                        </div>
-                                        <!-- /timeline-heading -->
-                                        <div class="timeline-body">
-                                            <p>Mentoring and leading class instructions during the hour long lunch time program at John Wanless Public school teaching children between the ages of 8 and 12 the fundamentals of HTML and CSS.</p>
-                                        </div>
-                                        <!-- /timeline-body -->
-                                    </div>
-                                    <!-- /timeline-content -->
-                                </div>
-                                <!-- /timeline-panel -->
-                            </li>
-                            <li class="timeline-inverted">
-                                <div class="posted-date">
-                                    <span class="month">2015 - 2016</span>
-                                </div>
-                                <!-- /posted-date -->
-                                <div class="timeline-panel wow fadeInUp">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Web Developer</h3>
-                                            <span>Mark Media Corp.</span>
-                                        </div>
-                                        <!-- /timeline-heading -->
-                                        <div class="timeline-body">
-                                            <p>Front-end, back-end and system operations for the Digital Media team building web solutions for all internal projects for Mark Media, New Realm Studios, NTDTV and Epoch Times.</p>
-                                        </div>
-                                        <!-- /timeline-body -->
-                                    </div>
-                                    <!-- /timeline-content -->
-                                </div>
-                                <!-- /timeline-panel -->
-                            </li>
-                            <li class="timeline">
-                                <div class="posted-date">
-                                    <span class="month">2016 - 2017</span>
-                                </div>
-                                <!-- /posted-date -->
-                                <div class="timeline-panel wow fadeInUp">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Web Interface Developer</h3>
-                                            <span>Symbility Intersect</span>
-                                        </div>
-                                        <!-- /timeline-heading -->
-                                        <div class="timeline-body">
-                                            <p>Developed interactive interface and web components for a prototype projects using Pug, Sass, and AngularJS.</p>
-                                        </div>
-                                        <!-- /timeline-body -->
-                                    </div>
-                                    <!-- /timeline-content -->
-                                </div>
-                                <!-- /timeline-panel -->
-                            </li>
+                        <!-- loop ends -->
+                        {% endfor %}
+
                         </ul>
                     </div>
                 </div>

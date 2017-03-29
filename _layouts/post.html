@@ -3,25 +3,25 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--><html class="no-js" lang="en" itemscope itemtype="http://schema.org/Article"><!--<![endif]-->
-    {% include head.html %}    
-    <body>
-      {% include nav-header-post.html %}
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" itemscope itemtype="http://schema.org/Article">
+<!--<![endif]-->
+{% include head.html %}
 
-      <div class="container">
+<body>
+    {% include nav-header-post.html %}
+    <div class="container single-post-page">
         <a href="{{site.baseurl}}"><i class="fa fa-chevron-left"></i> Back to site</a>
-        
         <h1 class="post-entry-title">{{ page.title }}</h1>
-
         <div class="portfolio-main-image">
-          <img src="../images/works/{{ page.image-featured }}">
+            <img src="../images/works/{{ page.image-featured }}">
         </div>
         {% if page.technology %}
         <div class="row project-container">
-          <div class="col-md-6">
-            <div class="project-column">
-              <p>
-                Role: <span class="role-text">{% for role in page.role %} {{role}} {% if forloop.last == false %},{% endif %}{% endfor %}</spen>
+            <div class="col-md-6">
+                <div class="project-column">
+                    <p>
+                        Role: <span class="role-text">{% for role in page.role %} {{role}} {% if forloop.last == false %},{% endif %}{% endfor %}</span>
               </p>
                 Visit Site: <a href="http://{{ page.link }}/" target="_blank">{{ page.link }}</a>
               </div>
@@ -43,7 +43,6 @@
         <div class="project-text">
           <p>{{ page.description }}</p>
         </div>
-          
         {{ content }}
       </div>
 
@@ -57,9 +56,10 @@
       </div>
       </div>
       <!-- Scroll-up -->
-  		<div class="scroll-up">
-    		<a href="#home"><i class="fa fa-angle-up"></i></a>
-  		</div>
+      <div class="scroll-up">
+        <a href="#home"><i class="fa fa-angle-up"></i></a>
+      </div>
+    </div>
   {% include footer.html %}
   {% include js.html%}
 </body>

@@ -1,3 +1,12 @@
+.single-post-page {
+	p {
+		margin-top: 15px;
+		margin-bottom: 15px;
+
+	}
+}
+
+
 
 .post-entry-title { 
 	&:after {
@@ -20,6 +29,7 @@
 	// width: 900px;
 	margin: 0 auto;
 	padding-bottom: 50px;
+	padding-top: 50px;
 }
 
 // .is-table-row {
