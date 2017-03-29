@@ -34,12 +34,8 @@
     </div>
   </section><!-- End Home Section -->
 
-
-
-
   <!-- Navigation -->
   {% include nav-header.html %}
-
 
     <!-- About Section -->
     <section id="about" class="about-section section-padding">
@@ -273,7 +269,7 @@
     <!-- Works Section -->
     <section id="works" class="works-section section-padding">
       <div class="container">
-        <h2 class="section-title wow fadeInUp">Works</h2>
+        <h2 class="section-title wow fadeInUp">My Work</h2>
 
         <ul class="list-inline" id="filter">
             <li><a class="active" data-group="all">All</a></li>
@@ -288,17 +284,16 @@
           {% for post in site.posts %}
             <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='[ {% for tag in post.tags %} "{{ tag }}" {% if forloop.last == false %},{% endif %}{% endfor %}]'>
               <div class="portfolio-bg">
+                <a href="{{ post.url }}" target="_blank">
                 <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a class="image-link" href="../images/works/{{ post.image }}"><i class="fa fa-search-plus"></i></a>
-                    <a href="{{ post.url }}" target="_blank"><i class="fa fa-link"></i></a>                          
-                  </div><!-- /.links -->
+                  <div class="tt-overlay"></div>                          
+                  
                   <img src="../images/works/{{ post.image }}" alt="{{ post.alt }}"> 
                   <div class="portfolio-info">
                     <h3>{{ post.title }}</h3>
                   </div><!-- /.portfolio-info -->
                 </div><!-- /.portfolio -->
+                </a>
               </div><!-- /.portfolio-bg -->
             </div>
           {% endfor %}
