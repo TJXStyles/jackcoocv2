@@ -14,21 +14,22 @@
         <h1 class="post-entry-title">{{ page.title }}</h1>
 
         <div class="portfolio-main-image">
-          <img src="../images/works/{{ page.image }}">
+          <img src="../images/works/{{ page.image-featured }}">
         </div>
 
         <div class="row project-container">
           <div class="col-md-6">
             <div class="project-column">
               <p>
-                Role: <span>{% for role in page.role %} {{role}} {% if forloop.last == false %},{% endif %}{% endfor %}</span>
+                Role: <span class="role-text">{% for role in page.role %} {{role}} {% if forloop.last == false %},{% endif %}{% endfor %}</spen>
               </p>
-                Visit Site: <a href="{{ page.uri }}">{{ page.uri }}</a>
+                Visit Site: <a href="http://{{ page.link }}/" target="_blank">{{ page.link }}</a>
               </div>
             </div>
+
             <div class="col-md-6">
-              <div class="project-column">
-                <h3>Technologies Used:</h3>
+              <div>
+                <h4>Technologies Used:</h4>
                 <ul>
                   {% for tech in page.technology %}
                   <li>{{ tech }}</li>
@@ -37,33 +38,28 @@
               </div>
             </div>
           </div><!-- .project-container -->
-        </div><!-- row -->
 
         <div class="project-text">
-          
-            <p>Lorem Ipsum</p>
-          
+          <p>{{ page.description }}</p>
         </div>
           
-
-
         {{ content }}
       </div>
 
       <div class="PageNavigation">
       {% if page.previous.url %}
-        <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+        <a class="prev" href="{{page.previous.url}}"><i class="fa fa-chevron-left"></i>Previous Project</a>
       {% endif %}
       {% if page.next.url %}
-        <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+        <a class="next" href="{{page.next.url}}">Next project <i class="fa fa-chevron-right"></i></a>
       {% endif %}
       </div>
       </div>
-  	 <!-- Scroll-up -->
+      <!-- Scroll-up -->
   		<div class="scroll-up">
     		<a href="#home"><i class="fa fa-angle-up"></i></a>
   		</div>
-
+  {% include footer.html %}
   {% include js.html%}
 </body>
 </html>

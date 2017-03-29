@@ -17,8 +17,9 @@
 }
 
 .project-text {
-	width: 900px;
+	// width: 900px;
 	margin: 0 auto;
+	padding-bottom: 50px;
 }
 
 // .is-table-row {
@@ -33,4 +34,9 @@
 .project-column {
 	width: 300px;
 	margin: 0 auto;
+	p {
+		.role-text {
+			color: $dark-gray;
+		}
+	}
 }
