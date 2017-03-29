@@ -28,11 +28,28 @@ Single article page
 ![Old version of categories](/images/works/np/categories-old.png)
 Categories section
 
-{:class="col-sm-12"}
+{:class="col-sm-12 clearfix"}
 These are screenshots of the original Android and iOS versions of the current app available in their respective marketplaces.
 
 {:class="text-center-sm col-sm-6 col-sm-offset-3"}
 ![My design with Material Design applied](/images/works/np/national-post-material.gif)
 
-{:class="col-sm-12"}
+{:class="col-sm-12 clearfix"}
 The redesigned National Post mobile app with Material Design methodology applied.
+
+
+---
+
+{:class="col-sm-12 clearfix"}
+
+{:class="col-sm-6 clearfix"}
+![My design with Material Design applied](/images/works/np/national-post-1.gif) 
+  **Hamburger Menu**\\
+  The current app uses a bottom line menu navigation system that takes up screen real estate. This design uses a more modern "hamburger menu" to give users more options, quickly.
+
+{:class="col-sm-6 clearfix"}
+![My design with Material Design applied](/images/works/np/national-post-2.gif) 
+  **Readability**\\
+  Readability should be the focus of any news app. Emphasis was given to typography, font size, line spacing, and tracking/kerning to make the text as easy-to-read as possible.  
+
+
