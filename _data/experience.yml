@@ -1,0 +1,12 @@
+---
+
+- role: Teaching Assitant
+  place: The YMC - Web Masters Web Development Workshop
+  description: Assisted classes of 20 students in a series of 9-week courses that introduced web development to beginners
+  year: 2013 - Present
+
+- role: FRONT-END WEB DEVELOPER
+  place: Hashtag Paid
+  description: Front-End development of the web application utilizing HTML5, Less, and JavaScript leveraging the Bootstrap framework and a Ruby on Rails/SQL back- end
+  year: "2014"
+---

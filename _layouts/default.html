@@ -14,30 +14,12 @@
   </div> -->
 
   <!-- Home Section -->
-  <section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
-    <div class="intro">
-      <div class="intro-sub">Jack Cooc</div>
-      <h1>Web <span>Developer</span></h1>
-      <p>I am a web developer &amp; user experience designer.<br> Feel free to contact me.</p>
-
-      <div class="social-icons">
-        <ul class="list-inline">
-          <li><a href="http://linkedin.com/in/jackcooc" target="_blank"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="http://twitter.com/jackcooc" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="mailto:jack.cooc@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
-        </ul>
-      </div> <!-- /.social-icons -->
-    </div>
-
-    <div class="mouse-icon">
-      <div class="wheel"></div>
-    </div>
-  </section><!-- End Home Section -->
+  {% include header.html %}
 
   <!-- Navigation -->
   {% include nav-header.html %}
 
-    <!-- About Section -->
+  <!-- About Section -->
     <section id="about" class="about-section section-padding">
       <div class="container">
         <h2 class="section-title wow fadeInUp">About Me</h2>
@@ -50,9 +32,9 @@
                 <img src="../images/profile.png" alt="">
               </div>
               <ul>
-                <li><strong>Name:</strong> Jack Cooc</li>
+                <li><strong>Name:</strong> {{ site.fullname }}</li>
                 <li><strong>Location:</strong> Toronto, ON</li>
-                <li><strong>Email:</strong> jack.cooc@gmail.com</li>
+                <li><strong>Email:</strong> {{ site.email }}</li>
               </ul>
             </div>
           </div> <!-- col-md-4 -->
@@ -69,14 +51,9 @@
               <p>I have done everything from front-end development, to back-end development to systems deployment on Amazon AWS EC2 instances. I have a wide variety of experience</p>
 
               <ul class="list-check">
-                <li>Front-End Web Development</li>
-                <li>HTML, CSS, JavaScript</li>
-                <li>User Experience Design</li>
-                <li>Systems deployment</li>
-                <li>Linux - Ubuntu, CentOS</li>
-                <li>Amazon AWS</li>
-                <li>WordPress theme customization</li>
-                <li>Git version control</li>
+                {% for skill in site.data.skills %}
+                <li>{{ skill.skill }}</li>
+                {% endfor %}
               </ul>
             </div>
 
