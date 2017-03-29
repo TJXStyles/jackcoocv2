@@ -24,9 +24,10 @@ url: "http://jackcooc.com/" # the base hostname & protocol for your site, e.g. h
 twitter: jackcooc
 
 # Website Text
-about:
-
-skills: [Front-End-Web-Development, "HTML, CSS, JavaScript", "User Experience Design", "Systems deployment", "Linux", "Amazon AWS", "WordPress theme customization", "Git version control"]
+#About me section
+about: I am a Toronto based web developer with experience in creating web solutions, most recently focusing on user experience design. I am passionate about building web experiences using robust, extensible frameworks and tools, always striving to continuously learn new skills and the latest technologies in each of my projects.
+# What do I know?
+iknow: I have done everything from front-end development, to back-end development to systems deployment on Amazon AWS EC2 instances. I have a wide variety of experience
 
 # Build settings
 markdown: kramdown

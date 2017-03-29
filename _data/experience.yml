@@ -1,25 +1,29 @@
 ---
-
 - role: TEACHING ASSISTANT
   place: The YMC - Web Masters Web Development Workshop
   description: Assisted classes of 20 students in a series of 9-week courses that introduced web development to beginners
   year: 2013 - Present
+  data: 1
 
 - role: Front-End web developer
   place: Hashtag Paid
-  description: Front-End development of the web application utilizing HTML5, Less, and JavaScript leveraging the Bootstrap framework and a Ruby on Rails/SQL back- end
+  description: Front-End development of the web application utilizing HTML5, Less, and JavaScript leveraging the Bootstrap framework and a Ruby on Rails/SQL back-end.
   year: "2014"
+  data: 2
 
 - role: Mentor/Instructor
   place: Kids Learning Code (Ladies Learning Code)
   year: "2015"
+  data: 3
 
 - role: WEB DEVELOPER
   place: Mark Media Corp.
   year: 2015 - 2016
+  data: 4
 
 - role: WEB INTERFACE DEVELOPER
   place: Symbility Intersect
   year: "2016 - 2017"
+  data: 5
 
 ---
