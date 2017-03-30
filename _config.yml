@@ -19,7 +19,8 @@ email: jack.cooc@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Did you just use Google to look for a front-end web devloper in the Toronto area? 
   Click on the link above to check out my portfolio and see what I'm about!
-baseurl: "" # the subpath of your site, e.g. /blog
+keywords: "Jack Cooc, web developer, front-end developer, portfolio, HTML, HTML5, CSS, CSS3, JavaScript, jQuery, AngularJS, Toronto"
+baseurl: "/work" # the subpath of your site, e.g. /blog
 url: "http://jackcooc.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter: jackcooc
 

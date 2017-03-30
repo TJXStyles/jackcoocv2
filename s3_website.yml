@@ -1,5 +1,9 @@
-s3_id: <%= ENV['S3_ID'] %>
-s3_secret: <%= ENV['S3_SECRET'] %>
+# s3_id: <%= ENV['S3_ID'] %>
+# s3_secret: <%= ENV['S3_SECRET'] %>
+
+s3_id: AKIAIMA4UAUYJAZFKAUA
+s3_secret: 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
+
 s3_bucket: jackcooc.com
 cloudfront_distribution_id: E2850M0VBWOUOS
 

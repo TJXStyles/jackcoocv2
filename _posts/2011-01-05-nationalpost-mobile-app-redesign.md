@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "NationalPost Mobile App redesign"
+title: "NationalPost App redesign"
 description: "THe National Post mobile redesign was a 1 day project to understand mobile useability."
 image-thumb: "np/np.png"
 image-featured: "np/np-full.png"

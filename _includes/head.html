@@ -5,6 +5,9 @@
 
   <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta name="keywords" content="{{ site.keywords }}">
+
   <!-- Facebook Open Graph - Start -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else if %}{{site.title}}{% endif %}">
   <meta property="og:url" content="{{ site.url }}">
@@ -33,8 +36,9 @@
   <link href="{{ "/css/style.css" | prepend: site.baseurl }}" rel="stylesheet" >
   <link href="../css/style.css" rel="stylesheet" >
 
-
   <!-- Responsive CSS -->
   <link href="/css/responsive.css" rel="stylesheet">
+
+  {% include favicon.html %}
 
 </head>
