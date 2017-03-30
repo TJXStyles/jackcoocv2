@@ -1,11 +1,13 @@
 # s3_id: <%= ENV['S3_ID'] %>
 # s3_secret: <%= ENV['S3_SECRET'] %>
 
-s3_id: AKIAIMA4UAUYJAZFKAUA
-s3_secret: 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
+s3_id: AKIAJWYZBWOQBDLT6ETA
+s3_secret: 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
+
 
 s3_bucket: jackcooc.com
 cloudfront_distribution_id: E2850M0VBWOUOS
+# cloudfront_distribution_id: d2xrbxf24xwdev
 
 # set s3_token if using temporary credentials with a session token (eg: when assuming a role)
 # s3_token: YOUR_AWS_S3_SESSION_TOKEN

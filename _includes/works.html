@@ -12,10 +12,10 @@
                 {% for post in site.posts reversed %}
                 <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='[ {% for tag in post.tags %} "{{ tag }}" {% if forloop.last == false %},{% endif %}{% endfor %}]'>
                     <div class="portfolio-bg">
-                        <a href="{{ site.url}}{{ post.url }}">
+                        <a href="http://jackcooc.com{{ post.url }}.html">
                             <div class="portfolio">
                                 <div class="tt-overlay"></div>
-                                <img src="{{ site.baseurl }}/images/works/{{ post.image-thumb }}" alt="{{ post.alt }}">
+                                <img src="{{site.url}}/images/works/{{ post.image-thumb }}" alt="{{ post.alt }}">
                                 <div class="portfolio-info">
                                     <h3>{{ post.title }}</h3>
                                 </div>
