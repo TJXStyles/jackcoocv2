@@ -21,7 +21,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Click on the link above to check out my portfolio and see what I'm about!
 keywords: "Jack Cooc, web developer, front-end developer, portfolio, HTML, HTML5, CSS, CSS3, JavaScript, jQuery, AngularJS, Toronto"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jackcooc.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "www.jackcooc.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter: jackcooc
 
 logo: jackcooc-wordmark-sm.png

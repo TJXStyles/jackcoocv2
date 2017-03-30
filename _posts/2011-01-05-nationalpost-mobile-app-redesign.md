@@ -10,7 +10,7 @@ tags: [all, interface, design]
 
 ## Material Design    
 
-The current National Post mobile app for iOS and Android are outdated and could benefit from restyling. Material Design guidelines were used to give the app a modern look and feel.\    
+The current National Post mobile app for iOS and Android are outdated and could benefit from restyling. Material Design guidelines were used to give the app a modern look and feel.   
 
 {:class="col-sm-3 clearfix"}
 ![Old iPhone version](/images/works/np/iphone-version-old.png)
