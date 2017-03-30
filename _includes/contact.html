@@ -6,7 +6,7 @@
       <div class="col-md-12">
         <div class="contact-form">
           <strong>Send me a message</strong>
-          <form name="contact-form" method="post" action="https://formspree.io/jack.cooc@gmail.com">
+          <form name="contact-form" method="post" action="https://formspree.io/{{ site.email }}">
             <input type="hidden" name="_subject" value="Contact form from jackcooc.com!" />
             <div class="form-group">
               <label for="InputEmail1">Email</label>
@@ -16,8 +16,9 @@
               <label for="InputTextarea">Message</label>
               <textarea name="message" class="form-control" id="InputTextarea" rows="5" required=""></textarea>
             </div>
+            <input type="text" name="_gotcha" style="display:none" /><br />
 
-            <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" name="submit" class="btn btn-primary btn-submit">Send Message</button>
           </form>
         </div>
       </div><!-- /.col-md-6 -->
