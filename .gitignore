@@ -4,3 +4,4 @@ _site
 node_modules/
 s3_website.yml
 .env
+.DS_Store
